@@ -1,0 +1,55 @@
+<mat-card class="cardWithShadow theme-card styled-card">
+    <mat-card-header>
+        <mat-card-title>Ajouter un Véhicule</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="scrollable-container">
+        <form [formGroup]="carForm" (ngSubmit)="onSubmit()" class="form-container">
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Matricule</mat-label>
+                <input matInput id="matricule" formControlName="matricule" placeholder="Entrez le matricule" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Modèle</mat-label>
+                <input matInput id="modele" formControlName="modele" placeholder="Entrez le modèle" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Couleur</mat-label>
+                <input matInput id="couleur" formControlName="couleur" placeholder="Entrez la couleur" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Puissance</mat-label>
+                <input matInput id="puissance" type="number" formControlName="puissance"
+                    placeholder="Entrez la puissance" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Carburant</mat-label>
+                <input matInput id="carburant" formControlName="carburant" placeholder="Entrez le type de carburant" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Année Modèle</mat-label>
+                <input matInput id="anneeModele" type="text" formControlName="anneeModele"
+                    placeholder="Entrez l'année du modèle" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Kilométrage</mat-label>
+                <input matInput id="kilometrage" type="number" formControlName="kilometrage"
+                    placeholder="Entrez le kilométrage" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Date de Vidange</mat-label>
+                <input matInput id="dateVidange" type="date" formControlName="dateVidange" />
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="submit" class="submit-button">
+                Ajouter Véhicule
+            </button>
+        </form>
+    </mat-card-content>
+</mat-card>
