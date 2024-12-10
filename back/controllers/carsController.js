@@ -28,8 +28,8 @@ exports.createCar = async (req, res) => {
 // Obtenir tous les utilisateurs
 exports.getCars = async (req, res) => {
     try {
-        const cars = await Car.find();
-        res.json(cars);
+        const cars = await Car.find(); // Récupère les voitures depuis la base de données
+        res.json(cars); // Renvoie un tableau JSON
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server Error');
