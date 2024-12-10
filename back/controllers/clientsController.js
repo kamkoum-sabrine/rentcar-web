@@ -57,19 +57,19 @@ exports.updateClient = async (req, res) => {
         }
 
         // Mettre à jour les informations utilisateur
-        car.prenom = prenom || car.prenom;
-        car.nom = nom || car.nom;
-        car.adresse = adresse || car.adresse;
-        car.telephone = telephone || car.telephone;
-        car.ste = ste || car.ste;
-        car.dateNaissance = dateNaissance || car.dateNaissance;
-        car.nationalite = nationalite || car.nationalite;
-        car.cin = cin || car.cin;
-        car.dateCin = dateCin || car.dateCin;
-        car.lieuCin = lieuCin || car.lieuCin;
-        car.numPermis = numPermis || car.numPermis;
-        car.datePermis = datePermis || car.datePermis;
-        car.lieuPermis = lieuPermis || car.lieuPermis;
+        client.prenom = prenom || client.prenom;
+        client.nom = nom || client.nom;
+        client.adresse = adresse || client.adresse;
+        client.telephone = telephone || client.telephone;
+        client.ste = ste || client.ste;
+        client.dateNaissance = dateNaissance || client.dateNaissance;
+        client.nationalite = nationalite || client.nationalite;
+        client.cin = cin || client.cin;
+        client.dateCin = dateCin || client.dateCin;
+        client.lieuCin = lieuCin || client.lieuCin;
+        client.numPermis = numPermis || client.numPermis;
+        client.datePermis = datePermis || client.datePermis;
+        client.lieuPermis = lieuPermis || client.lieuPermis;
         // car.isActive = isActive !== undefined ? isActive : car.isActive;
 
         await client.save();

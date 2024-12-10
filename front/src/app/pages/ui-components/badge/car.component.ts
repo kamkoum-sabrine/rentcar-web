@@ -98,7 +98,7 @@ export class AppCarComponent implements OnInit {
       cancelButtonText: 'Annuler',
     }).then((result) => {
       if (result.isConfirmed) {
-        this.carService.deleteCar(car.id).subscribe({
+        this.carService.deleteCar(car._id).subscribe({
           next: (response) => {
             Swal.fire({
               title: 'Supprimé !',

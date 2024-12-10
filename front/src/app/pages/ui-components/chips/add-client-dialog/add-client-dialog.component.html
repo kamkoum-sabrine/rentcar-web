@@ -1,0 +1,85 @@
+<mat-card class="cardWithShadow">
+
+    <mat-card-header>
+        <mat-card-title>
+            {{ data ? 'Modifier le Client' : 'Ajouter un Client' }}
+        </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <form [formGroup]="clientForm" (ngSubmit)="onSubmit()" class="form-container">
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Prénom</mat-label>
+                <input matInput id="prenom" formControlName="prenom" placeholder="Entrez le prénom" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Nom</mat-label>
+                <input matInput id="nom" formControlName="nom" placeholder="Entrez le nom" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Adresse</mat-label>
+                <input matInput id="adresse" formControlName="adresse" placeholder="Entrez l'adresse" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Téléphone</mat-label>
+                <input matInput id="telephone" type="tel" formControlName="telephone"
+                    placeholder="Entrez le téléphone" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Société (Ste)</mat-label>
+                <input matInput id="ste" formControlName="ste" placeholder="Entrez la société" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Date de Naissance</mat-label>
+                <input matInput id="dateNaissance" type="date" formControlName="dateNaissance" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Nationalité</mat-label>
+                <input matInput id="nationalite" formControlName="nationalite" placeholder="Entrez la nationalité" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>CIN</mat-label>
+                <input matInput id="cin" formControlName="cin" placeholder="Entrez le CIN" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Date CIN</mat-label>
+                <input matInput id="dateCin" type="date" formControlName="dateCin" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Lieu de Délivrance CIN</mat-label>
+                <input matInput id="lieuCin" formControlName="lieuCin"
+                    placeholder="Entrez le lieu de délivrance du CIN" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Numéro de Permis</mat-label>
+                <input matInput id="numPermis" formControlName="numPermis" placeholder="Entrez le numéro de permis" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Lieu de Délivrance Permis</mat-label>
+                <input matInput id="lieuPermis" formControlName="lieuPermis"
+                    placeholder="Entrez le lieu de délivrance du permis" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Date de Délivrance Permis</mat-label>
+                <input matInput id="datePermis" type="date" formControlName="datePermis" />
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="submit" class="submit-button">
+                {{ data ? 'Modifier Client' : 'Ajouter Client' }}
+            </button>
+        </form>
+    </mat-card-content>
+
+</mat-card>

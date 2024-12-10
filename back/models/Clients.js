@@ -48,7 +48,7 @@ const ClientSchema = new mongoose.Schema({
         required: false,
     },
     numPermis: {
-        type: Boolean,
+        type: String,
         required: false,
     },
     datePermis: {
