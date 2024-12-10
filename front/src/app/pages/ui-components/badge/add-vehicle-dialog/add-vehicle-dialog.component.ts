@@ -7,11 +7,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-add-vehicle-dialog',
   templateUrl: './add-vehicle-dialog.component.html',
   standalone: true,
+  styleUrls: ['./add-vehicle-dialog.component.scss'], // Lien vers le fichier SCSS
+  encapsulation: ViewEncapsulation.None,
   imports: [
     MatBadgeModule,
     MatButtonModule,

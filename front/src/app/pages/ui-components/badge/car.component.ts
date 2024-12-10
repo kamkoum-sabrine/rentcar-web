@@ -130,6 +130,9 @@ export class AppCarComponent implements OnInit {
 
   editVehicle(vehicle: any): void {
     const dialogRef = this.dialog.open(AddVehicleDialogComponent, {
+      width: '600px', // Largeur du dialogue
+      height: '800px', // Hauteur du dialogue
+      panelClass: 'custom-dialog-container',
       data: vehicle, // Passez les données du véhicule sélectionné
     });
     console.log("Vehicule : " + vehicle)
@@ -145,7 +148,11 @@ export class AppCarComponent implements OnInit {
   }
 
   openAddVehicleDialog() {
-    const dialogRef = this.dialog.open(AddVehicleDialogComponent);
+    const dialogRef = this.dialog.open(AddVehicleDialogComponent, {
+      width: '600px', // Largeur du dialogue
+      height: '800px', // Hauteur du dialogue
+      panelClass: 'custom-dialog-container'
+    });
 
     dialogRef.afterClosed().subscribe((result) => {
       if (result) {
