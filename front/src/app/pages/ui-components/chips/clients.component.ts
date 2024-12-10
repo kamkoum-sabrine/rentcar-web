@@ -16,7 +16,7 @@ import { AddClientDialogComponent } from './add-client-dialog/add-client-dialog.
 
 @Component({
   selector: 'app-chips',
-  templateUrl: './chips.component.html',
+  templateUrl: './clients.component.html',
   standalone: true,
   styles: [`
   .vehicle-item {
@@ -52,7 +52,7 @@ table {
 `],
   imports: [MatBadgeModule, MatButtonModule, MatIconModule, MatCardModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, CommonModule, MatTableModule] // Pour les champs de saisie],
 })
-export class AppChipsComponent implements OnInit {
+export class AppClientsComponent implements OnInit {
   clients: any[] = []; // Liste des véhicules
   displayedColumns: string[] = ['prenom', 'nom', 'adresse', 'telephone', 'ste', 'dateNaissance', 'nationalite', 'cin', 'dateCin', 'lieuCin', 'numPermis', 'datePermis', 'lieuPermis', 'actions'];
 
