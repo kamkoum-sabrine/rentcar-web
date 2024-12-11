@@ -14,6 +14,7 @@ import { MatTableModule } from '@angular/material/table';  // Importez MatTableM
 import Swal from 'sweetalert2';
 
 
+
 @Component({
   selector: 'app-badge',
   templateUrl: './cars.component.html',
@@ -67,6 +68,7 @@ export class AppCarComponent implements OnInit {
       },
     });
   }
+
 
 
 
