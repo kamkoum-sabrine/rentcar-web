@@ -1,17 +1,23 @@
 import { Routes } from '@angular/router';
 import { BlankComponent } from './layouts/blank/blank.component';
 import { FullComponent } from './layouts/full/full.component';
+import { LandingComponent } from './pages/landing/landing.component'; // Import du nouveau composant
 
 export const routes: Routes = [
   {
     path: '',
-    component: FullComponent,
+    component: BlankComponent, // Landing page avec mise en page vide
     children: [
       {
         path: '',
-        redirectTo: '/dashboard',
-        pathMatch: 'full',
+        component: LandingComponent, // Landing page devient la route par défaut
       },
+    ],
+  },
+  {
+    path: '',
+    component: FullComponent,
+    children: [
       {
         path: 'dashboard',
         loadChildren: () =>
@@ -46,6 +52,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'authentication/error',
+    redirectTo: '', // Redirection vers la landing page par défaut
   },
 ];

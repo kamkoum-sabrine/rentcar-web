@@ -7,7 +7,7 @@ import { AppSamplePageComponent } from './sample-page/sample-page.component';
 
 export const ExtraRoutes: Routes = [
   {
-    path: '',
+    path: '/home',
     children: [
       {
         path: 'icons',

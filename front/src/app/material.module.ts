@@ -88,7 +88,7 @@ import { MatTableModule } from '@angular/material/table';
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatCardModule,
+    MatCardModule
   ],
 })
 export class MaterialModule { }
