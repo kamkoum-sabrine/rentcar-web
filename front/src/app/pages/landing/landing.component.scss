@@ -11291,3 +11291,25 @@ a.text-dark:focus {
 .input-group [data-toggle="datetimepicker"] {
     cursor: pointer;
 }
+
+.team-carousel .d-flex {
+    display: flex;
+    justify-content: space-between;
+    /* Pour espacer les éléments */
+    align-items: center;
+    /* Pour aligner les éléments verticalement */
+}
+
+.team-item {
+    text-align: center;
+    /* Centrer le texte et les images dans chaque équipe */
+    flex: 1;
+    /* Assurez-vous que chaque élément prenne la même largeur */
+    margin: 10px;
+    /* Ajoutez un petit espace entre les éléments */
+}
+
+.team-item img {
+    margin-bottom: 10px;
+    /* Ajoutez un peu d'espace en dessous de l'image */
+}
