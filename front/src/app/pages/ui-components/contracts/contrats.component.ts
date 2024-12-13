@@ -16,8 +16,8 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
 @Component({
-  selector: 'app-lists',
-  templateUrl: './lists.component.html',
+  selector: 'app-contrats',
+  templateUrl: './contrats.component.html',
   standalone: true,
   styles: [`
   .vehicle-item {
@@ -53,7 +53,7 @@ table {
 `],
   imports: [MatBadgeModule, MatButtonModule, MatIconModule, MatCardModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, CommonModule, MatTableModule] // Pour les champs de saisie],
 })
-export class AppListsComponent implements OnInit {
+export class AppContratsComponent implements OnInit {
   contrats: any[] = []; // Liste des véhicules
 
   displayedColumns: string[] = ['datDebut', 'dateFin', 'voiture', 'conducteur1', 'conducteur2', 'prolongation1', 'prolongation2', 'changementVoiture', 'coutJour', 'actions', 'imprimer'];

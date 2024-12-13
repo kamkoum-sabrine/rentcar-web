@@ -71,42 +71,40 @@ export class AppUpcomingSchedulesComponent {
   stats2: stats2[] = [
     {
       id: 1,
-      time: '09.30 am',
+      time: '31/12/2024 09.30 am',
       color: 'primary',
-      subtext: 'Payment received from John Doe of $385.90',
+      subtext: 'Change oil 245TN2012',
     },
     {
       id: 2,
-      time: '10.30 am',
+      time: '28/12/2024 10.30 am',
       color: 'accent',
-      title: 'New sale recorded',
-      link: '#ML-3467',
+      title: 'Change oil 241TN3215'
+
     },
     {
       id: 3,
-      time: '12.30 pm',
+      time: '19/12/2024 12.30 pm',
       color: 'success',
-      subtext: 'Payment was made of $64.95 to Michael',
+      subtext: 'Change oil 238TN1478',
     },
     {
       id: 4,
-      time: '12.30 pm',
+      time: '17/12/2024 12.30 pm',
       color: 'warning',
-      title: 'New sale recorded',
-      link: '#ML-3467',
+      title: 'Technical Inspection 216TN1546'
     },
     {
       id: 5,
-      time: '12.30 pm',
+      time: '16/12/2024 12.30 pm',
       color: 'error',
-      title: 'New arrival recorded',
-      link: '#ML-3467',
+      title: 'Change oil 246TN2020'
     },
     {
       id: 6,
-      time: '12.30 pm',
+      time: '15/12/2024 12.30 pm',
       color: 'success',
-      subtext: 'Payment was made of $64.95 to Michael',
+      subtext: 'Technical inspection 235TN1546',
     },
   ];
 }

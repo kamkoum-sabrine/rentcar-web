@@ -2,57 +2,57 @@
 
     <mat-card-header>
         <mat-card-title>
-            {{ data ? 'Modifier le Véhicule' : 'Ajouter un Véhicule' }}
+            {{ data ? 'Edit car' : 'Add car' }}
         </mat-card-title>
         <!-- <mat-card-title>Ajouter un Véhicule</mat-card-title>-->
     </mat-card-header>
     <mat-card-content>
         <form [formGroup]="carForm" (ngSubmit)="onSubmit()" class="form-container">
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Matricule</mat-label>
-                <input matInput id="matricule" formControlName="matricule" placeholder="Entrez le matricule" />
+                <mat-label>Registration number</mat-label>
+                <input matInput id="matricule" formControlName="matricule"
+                    placeholder="Enter the registration number" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Modèle</mat-label>
-                <input matInput id="modele" formControlName="modele" placeholder="Entrez le modèle" />
+                <mat-label>Model</mat-label>
+                <input matInput id="modele" formControlName="modele" placeholder="Enter the model" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Couleur</mat-label>
-                <input matInput id="couleur" formControlName="couleur" placeholder="Entrez la couleur" />
+                <mat-label>Color</mat-label>
+                <input matInput id="couleur" formControlName="couleur" placeholder="Enter the color" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Puissance</mat-label>
-                <input matInput id="puissance" type="number" formControlName="puissance"
-                    placeholder="Entrez la puissance" />
+                <mat-label>Power</mat-label>
+                <input matInput id="puissance" type="number" formControlName="puissance" placeholder="Enter a power" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Carburant</mat-label>
-                <input matInput id="carburant" formControlName="carburant" placeholder="Entrez le type de carburant" />
+                <mat-label>Fuel</mat-label>
+                <input matInput id="carburant" formControlName="carburant" placeholder="Enter the fuel type" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Année Modèle</mat-label>
+                <mat-label>Year</mat-label>
                 <input matInput id="anneeModele" type="text" formControlName="anneeModele"
-                    placeholder="Entrez l'année du modèle" />
+                    placeholder="Enter the year" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Kilométrage</mat-label>
+                <mat-label>Mileage</mat-label>
                 <input matInput id="kilometrage" type="number" formControlName="kilometrage"
-                    placeholder="Entrez le kilométrage" />
+                    placeholder="Enter the mileage" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Date de Vidange</mat-label>
+                <mat-label>Oil change date</mat-label>
                 <input matInput id="dateVidange" type="date" formControlName="dateVidange" />
             </mat-form-field>
 
             <button mat-raised-button color="primary" type="submit" class="submit-button">
-                {{ data ? 'Modifier Véhicule' : 'Ajouter Véhicule' }}
+                {{ data ? 'Edit car' : 'Add car' }}
             </button>
         </form>
     </mat-card-content>

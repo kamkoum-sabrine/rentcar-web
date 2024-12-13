@@ -49,12 +49,12 @@ table {
 })
 export class AppCarComponent implements OnInit {
   vehicles: any[] = []; // Liste des véhicules
-  displayedColumns: string[] = ['matricule', 'modele', 'couleur', 'puissance', 'carburant', 'anneeModele', 'kilometrage', 'dateVidange', 'actions'];
+  displayedColumns: string[] = ['Registration number', 'Model', 'Color', 'Power', 'Fuel', 'Year', 'Mileage', 'Oil change date', 'actions'];
 
   constructor(private dialog: MatDialog, private carService: CarService) { }
 
   ngOnInit() {
-    this.loadVehicles(); // Charger la liste au démarrage
+    this.loadVehicles();
   }
 
   loadVehicles() {
@@ -90,21 +90,21 @@ export class AppCarComponent implements OnInit {
 
   deleteVehicle(car: any) {
     Swal.fire({
-      title: 'Êtes-vous sûr ?',
-      text: `Voulez-vous vraiment supprimer la voiture ${car.modele} ?`,
+      title: 'Are you sure ?',
+      text: `Do you really want to delete the car${car.modele} ?`,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Oui, supprimer',
-      cancelButtonText: 'Annuler',
+      confirmButtonText: 'Yes, delete',
+      cancelButtonText: 'Cancel',
     }).then((result) => {
       if (result.isConfirmed) {
         this.carService.deleteCar(car._id).subscribe({
           next: (response) => {
             Swal.fire({
-              title: 'Supprimé !',
-              text: 'La voiture a été supprimée avec succès.',
+              title: 'Deleted !',
+              text: 'The car has been successfully deleted.',
               icon: 'success',
               showConfirmButton: false,
               timer: 1500, // Le dialogue disparaît après 1.5 secondes
@@ -114,8 +114,8 @@ export class AppCarComponent implements OnInit {
           error: (err) => {
             console.error(err);
             Swal.fire({
-              title: 'Erreur',
-              text: 'Impossible de supprimer la voiture.',
+              title: 'Error',
+              text: 'Unable to delete the car',
               icon: 'error',
               confirmButtonText: 'OK',
             });

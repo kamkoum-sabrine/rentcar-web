@@ -9,8 +9,8 @@ export interface productsData {
   imagePath: string;
   uname: string;
   position: string;
-  hrate: number;
-  skills: string;
+  Cost: number;
+  RentalPeriod: number;
   priority: string;
   progress: string;
 }
@@ -20,41 +20,41 @@ const ELEMENT_DATA: productsData[] = [
     id: 1,
     imagePath: 'assets/images/profile/user-1.jpg',
     uname: 'Mark J. Freeman',
-    position: 'Developer',
-    skills: 'HTML',
-    hrate: 80,
-    priority: 'Available',
+    position: '',
+    Cost: 150,
+    RentalPeriod: 80,
+    priority: 'Active',
     progress: 'success',
   },
   {
     id: 2,
     imagePath: 'assets/images/profile/user-2.jpg',
     uname: 'Nina R. Oldman',
-    position: 'Designer',
-    skills: 'JavaScript',
-    hrate: 70,
-    priority: 'On Holiday',
-    progress: 'primary',
+    position: '',
+    Cost: 150,
+    RentalPeriod: 80,
+    priority: 'Active',
+    progress: 'success',
   },
   {
     id: 3,
     imagePath: 'assets/images/profile/user-3.jpg',
     uname: 'Arya H. Shah',
-    position: 'Developer',
-    skills: 'React',
-    hrate: 40,
-    priority: 'Absent',
+    position: '',
+    Cost: 150,
+    RentalPeriod: 80,
+    priority: 'Inactive',
     progress: 'error',
   },
   {
     id: 4,
     imagePath: 'assets/images/profile/user-4.jpg',
     uname: 'June R. Smith',
-    position: 'Designer',
-    skills: 'Vuejs',
-    hrate: 20,
-    priority: 'On Leave',
-    progress: 'warning',
+    position: '',
+    Cost: 150,
+    RentalPeriod: 80,
+    priority: 'Active',
+    progress: 'success',
   },
 ];
 
@@ -65,6 +65,6 @@ const ELEMENT_DATA: productsData[] = [
   templateUrl: './top-employees.component.html',
 })
 export class AppTopEmployeesComponent {
-  displayedColumns: string[] = ['profile', 'hrate', 'skills', 'status'];
+  displayedColumns: string[] = ['Profile', 'Cost', 'RentalPeriod', 'Status'];
   dataSource = ELEMENT_DATA;
 }

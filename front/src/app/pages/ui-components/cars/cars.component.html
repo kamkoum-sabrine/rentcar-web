@@ -2,57 +2,57 @@
   <mat-card-content>
     <div class="button-container">
       <button mat-raised-button color="primary" (click)="openAddVehicleDialog()">
-        Ajouter Véhicule
+        Add Car
       </button>
     </div>
 
     <!-- Tableau des véhicules -->
     <table mat-table [dataSource]="vehicles" class="mat-elevation-z8">
       <!-- Colonne Matricule -->
-      <ng-container matColumnDef="matricule">
-        <th mat-header-cell *matHeaderCellDef> Matricule </th>
+      <ng-container matColumnDef="Registration number">
+        <th mat-header-cell *matHeaderCellDef> Registration number </th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.matricule }} </td>
       </ng-container>
 
       <!-- Colonne Modèle -->
-      <ng-container matColumnDef="modele">
-        <th mat-header-cell *matHeaderCellDef> Modèle </th>
+      <ng-container matColumnDef="Model">
+        <th mat-header-cell *matHeaderCellDef> Model </th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.modele }} </td>
       </ng-container>
 
       <!-- Colonne Couleur -->
-      <ng-container matColumnDef="couleur">
-        <th mat-header-cell *matHeaderCellDef> Couleur </th>
+      <ng-container matColumnDef="Color">
+        <th mat-header-cell *matHeaderCellDef> Color </th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.couleur }} </td>
       </ng-container>
 
       <!-- Colonne Puissance -->
-      <ng-container matColumnDef="puissance">
-        <th mat-header-cell *matHeaderCellDef> Puissance </th>
+      <ng-container matColumnDef="Power">
+        <th mat-header-cell *matHeaderCellDef> Power </th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.puissance }} </td>
       </ng-container>
 
       <!-- Colonne Carburant -->
-      <ng-container matColumnDef="carburant">
-        <th mat-header-cell *matHeaderCellDef> Carburant </th>
+      <ng-container matColumnDef="Fuel">
+        <th mat-header-cell *matHeaderCellDef> Fuel </th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.carburant }} </td>
       </ng-container>
 
       <!-- Colonne Année Modèle -->
-      <ng-container matColumnDef="anneeModele">
-        <th mat-header-cell *matHeaderCellDef> Année Modèle </th>
+      <ng-container matColumnDef="Year">
+        <th mat-header-cell *matHeaderCellDef>Year</th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.anneeModele }} </td>
       </ng-container>
 
       <!-- Colonne Kilométrage -->
-      <ng-container matColumnDef="kilometrage">
-        <th mat-header-cell *matHeaderCellDef> Kilométrage </th>
+      <ng-container matColumnDef="Mileage">
+        <th mat-header-cell *matHeaderCellDef> Mileage </th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.kilometrage }} </td>
       </ng-container>
 
       <!-- Colonne Date Vidange -->
-      <ng-container matColumnDef="dateVidange">
-        <th mat-header-cell *matHeaderCellDef> Date de Vidange </th>
+      <ng-container matColumnDef="Oil change date">
+        <th mat-header-cell *matHeaderCellDef> Oil change date </th>
         <td mat-cell *matCellDef="let vehicle"> {{ vehicle.dateVidange | date: 'dd/MM/yyyy' }} </td>
       </ng-container>
 

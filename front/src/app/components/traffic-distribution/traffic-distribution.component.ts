@@ -53,7 +53,7 @@ export class AppTrafficDistributionComponent {
 
     this.trafficdistributionChart = {
       series: [5368, 3500, 4106],
-      labels: ['5368', 'Refferal Traffic', 'Oragnic Traffic'],
+      labels: ['5368', ' Search Traffic', 'Paid Traffic'],
       chart: {
         type: 'donut',
         fontFamily: "'Plus Jakarta Sans', sans-serif;",

@@ -3,16 +3,17 @@
     <div class="position-relative shaper-wrapper">
       <div class="w-100 position-relative rounded bg-white auth-card">
         <div class="auth-body">
-          
+
           <a [routerLink]="['/dashboards/dashboard1']" class="m-t-20 d-flex">
-            <img src="./assets/images/logos/dark-logo.svg" class="align-middle m-2" alt="logo" />
+            <img src="./assets/images/logos/logo-removebg-preview.png" class="align-middle m-2" height="150"
+              alt="logo" />
           </a>
-          
+
 
           <div class="row">
             <div class="col-lg-6">
               <div class="align-items-center justify-content-center d-none d-lg-flex">
-                <img src="/assets/images/backgrounds/login3-bg.png" alt="login" style="max-width: 500px" />
+                <img src="/assets/images/bg.png" alt="login" style="max-width: 500px" />
               </div>
             </div>
             <div class="col-lg-6">
@@ -20,11 +21,11 @@
                 <div class="row justify-content-center w-100">
                   <div class="col-lg-11">
                     <h4 class="f-w-700 f-s-30 m-0 m-t-20 lh-base">
-                      Welcome to Spike Admin
+                      KAMKOUM LOCATION AUTO
                     </h4>
                     <span class="f-s-14 d-block mat-body-1 m-t-8">Your Admin Dashboard</span>
 
-                    <div class="row m-t-40">
+                    <!--- <div class="row m-t-40">
                       <div class="col-12 col-sm-6">
                         <button mat-stroked-button class="w-100 m-b-4">
                           <div class="d-flex align-items-center">
@@ -42,8 +43,8 @@
                         </button>
                       </div>
                     </div>
-
-                    <div class="or-border m-t-30">or sign in with</div>
+                  -->
+                    <div class="or-border m-t-30">Sign in with</div>
 
                     <form class="m-t-30" [formGroup]="form" (ngSubmit)="submit()">
                       <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block">Username</mat-label>
@@ -89,11 +90,11 @@
                       </button>
                       <!-- input -->
                     </form>
-                    <span class="d-block f-w-500 d-block m-t-24">New to Spike?
+                    <!--<span class="d-block f-w-500 d-block m-t-24">New to Spike?
                       <a [routerLink]="['/authentication/register']"
                         class="text-decoration-none text-primary f-w-500 f-s-14">
                         Create an account</a>
-                    </span>
+                    </span>-->
                   </div>
                 </div>
               </div>

@@ -17,60 +17,18 @@ export const navItems: NavItem[] = [
     displayName: 'Véhicules',
     iconName: 'car',
     bgcolor: 'accent',
-    route: '/ui-components/badge',
+    route: '/ui-components/cars',
   },
   {
     displayName: 'Clients',
     iconName: 'users',
     bgcolor: 'warning',
-    route: '/ui-components/chips',
+    route: '/ui-components/clients',
   },
   {
     displayName: 'Contrats',
     iconName: 'clipboard-data',
     bgcolor: 'success',
-    route: '/ui-components/lists',
-  },
-  {
-    displayName: 'Factures',
-    iconName: 'printer',
-    bgcolor: 'error',
-    route: '/ui-components/menu',
-  },
-  {
-    displayName: 'Tooltips',
-    iconName: 'tooltip',
-    bgcolor: 'primary',
-    route: '/ui-components/tooltips',
-  },
-  {
-    navCap: 'Auth',
-  },
-  {
-    displayName: 'Login',
-    iconName: 'lock',
-    bgcolor: 'accent',
-    route: '/authentication/login',
-  },
-  {
-    displayName: 'Register',
-    iconName: 'user-plus',
-    bgcolor: 'warning',
-    route: '/authentication/register',
-  },
-  {
-    navCap: 'Extra',
-  },
-  {
-    displayName: 'Icons',
-    iconName: 'mood-smile',
-    bgcolor: 'success',
-    route: '/extra/icons',
-  },
-  {
-    displayName: 'Sample Page',
-    iconName: 'aperture',
-    bgcolor: 'error',
-    route: '/extra/sample-page',
-  },
+    route: '/ui-components/contracts',
+  }
 ];

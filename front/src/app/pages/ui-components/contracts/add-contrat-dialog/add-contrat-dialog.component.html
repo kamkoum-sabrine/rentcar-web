@@ -9,17 +9,17 @@
     <mat-card-content>
         <form [formGroup]="contratForm" (ngSubmit)="onSubmit()">
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Date de début</mat-label>
+                <mat-label>Start date</mat-label>
                 <input matInput type="date" formControlName="datDebut" required />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Date de fin</mat-label>
+                <mat-label>End date</mat-label>
                 <input matInput type="date" formControlName="dateFin" required />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Voiture</mat-label>
+                <mat-label>Car</mat-label>
                 <mat-select formControlName="voiture" required>
                     <mat-option *ngFor="let voiture of voitures" [value]="voiture._id">{{ voiture.modele }} - {{
                         voiture.matricule }}</mat-option>
@@ -27,7 +27,7 @@
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Conducteur 1</mat-label>
+                <mat-label>Driver 1</mat-label>
                 <mat-select formControlName="conducteur1" required>
                     <mat-option *ngFor="let client of clients" [value]="client._id">{{ client.nom }} {{ client.prenom }}
                     </mat-option>
@@ -35,7 +35,7 @@
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Conducteur 2 (optionnel)</mat-label>
+                <mat-label>Driver 2 (Optional)</mat-label>
                 <mat-select formControlName="conducteur2">
                     <mat-option *ngFor="let client of clients" [value]="client._id">{{ client.nom }} {{ client.prenom }}
                     </mat-option>
@@ -43,30 +43,29 @@
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Prolongation 1</mat-label>
+                <mat-label>Extension 1</mat-label>
                 <input matInput type="date" formControlName="prolongation1" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Prolongation 2</mat-label>
+                <mat-label>Extension 2</mat-label>
                 <input matInput type="date" formControlName="prolongation2" />
             </mat-form-field>
 
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Changement de voiture</mat-label>
+                <mat-label>Car change</mat-label>
                 <mat-select formControlName="changementVoiture">
                     <mat-option *ngFor="let voiture of voitures" [value]="voiture._id">{{ voiture.modele }} - {{
                         voiture.matricule }}</mat-option>
                 </mat-select>
             </mat-form-field>
             <mat-form-field appearance="fill" class="form-field">
-                <mat-label>Coût par jour</mat-label>
-                <input matInput type="number" formControlName="coutJour" placeholder="Entrez le coût par jour"
-                    required />
+                <mat-label>Cost per day</mat-label>
+                <input matInput type="number" formControlName="coutJour" placeholder="Enter cost per day" required />
             </mat-form-field>
 
             <button mat-raised-button color="primary" type="submit">
-                Valider la réservation
+                Confirm the reservation
             </button>
         </form>
     </mat-card-content>

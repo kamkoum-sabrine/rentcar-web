@@ -1,7 +1,7 @@
 <mat-card class="cardWithShadow">
     <mat-card-header class="p-t-24">
         <div class="d-flex align-items-center justify-content-between w-100">
-            <mat-card-title>Top Paying Clients</mat-card-title>
+            <mat-card-title>Top Clients</mat-card-title>
             <button mat-icon-button color="inherit" aria-label="Example icon-button with a menu">
                 <mat-icon class="f-s-24 d-flex align-items-center justify-content-center">more_vert</mat-icon>
             </button>
@@ -11,7 +11,7 @@
         <div class="table-responsive">
             <table mat-table [dataSource]="dataSource" class="w-100">
                 <!-- Profile Column -->
-                <ng-container matColumnDef="profile">
+                <ng-container matColumnDef="Profile">
                     <th mat-header-cell *matHeaderCellDef class="f-w-600 mat-subtitle-1 f-s-16">
                         Profile
                     </th>
@@ -29,27 +29,28 @@
                 </ng-container>
 
                 <!-- Hour Rate Column -->
-                <ng-container matColumnDef="hrate">
+                <ng-container matColumnDef="Cost">
                     <th mat-header-cell *matHeaderCellDef class="f-w-600 mat-subtitle-1 f-s-16">
-                        Hour Rate
+                        Cost
+
                     </th>
                     <td mat-cell *matCellDef="let element" class="mat-body-1">
-                        <span><span class="f-w-600 f-s-14">${{ element.hrate }}</span>/hour</span>
+                        <span><span class="f-w-600 f-s-14">${{ element.Cost }}</span>/day</span>
                     </td>
                 </ng-container>
 
                 <!-- Symbol Column -->
-                <ng-container matColumnDef="skills">
+                <ng-container matColumnDef="RentalPeriod">
                     <th mat-header-cell *matHeaderCellDef class="f-w-600 mat-subtitle-1 f-s-16">
-                        Skills
+                        Rental Period
                     </th>
                     <td mat-cell *matCellDef="let element">
-                        <span class="f-s-14">{{ element.skills }}</span>
+                        <span class="f-s-14">{{ element.RentalPeriod }}</span>
                     </td>
                 </ng-container>
 
                 <!-- Weight Column -->
-                <ng-container matColumnDef="status">
+                <ng-container matColumnDef="Status">
                     <th mat-header-cell *matHeaderCellDef class="f-w-600 mat-subtitle-1 f-s-16">
                         Status
                     </th>
